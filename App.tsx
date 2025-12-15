@@ -5,17 +5,68 @@ import { About } from './components/About';
 import { Menu } from './components/Menu';
 import { Reservation } from './components/Reservation';
 import { Footer } from './components/Footer';
+import { Cart, CartItem } from './components/Cart';
+import { menuData } from './data/menuData';
 
 function App() {
-  const [cartCount, setCartCount] = useState(0);
+  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
-  const addToCart = () => {
-    setCartCount(prev => prev + 1);
+  const addToCart = (itemName: string, category: string) => {
+    // Find the item from menu data
+    const menuItem = menuData
+      .flatMap(cat => cat.items.map(item => ({ ...item, category: cat.category })))
+      .find(item => item.name === itemName && item.category === category);
+
+    if (!menuItem) return;
+
+    setCartItems(prev => {
+      const existingItem = prev.find(item => item.id === `${menuItem.name}-${category}`);
+      
+      if (existingItem) {
+        return prev.map(item =>
+          item.id === `${menuItem.name}-${category}`
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        );
+      } else {
+        return [...prev, {
+          id: `${menuItem.name}-${category}`,
+          name: menuItem.name,
+          price: menuItem.price,
+          quantity: 1,
+          image_url: menuItem.image_url,
+          category: category
+        }];
+      }
+    });
+  };
+
+  const updateQuantity = (id: string, quantity: number) => {
+    if (quantity <= 0) {
+      removeItem(id);
+    } else {
+      setCartItems(prev =>
+        prev.map(item =>
+          item.id === id ? { ...item, quantity } : item
+        )
+      );
+    }
+  };
+
+  const removeItem = (id: string) => {
+    setCartItems(prev => prev.filter(item => item.id !== id));
+  };
+
+  const cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+
+  const toggleCart = () => {
+    setIsCartOpen(!isCartOpen);
   };
 
   return (
     <div className="min-h-screen bg-muglan-dark overflow-x-hidden text-gray-200">
-      <Navbar cartCount={cartCount} />
+      <Navbar cartCount={cartCount} onCartClick={toggleCart} />
       <Hero />
       <About />
       <Menu addToCart={addToCart} />
@@ -59,6 +110,15 @@ function App() {
       </section>
 
       <Footer />
+
+      {/* Cart Sidebar */}
+      <Cart
+        cartItems={cartItems}
+        updateQuantity={updateQuantity}
+        removeItem={removeItem}
+        onClose={() => setIsCartOpen(false)}
+        isOpen={isCartOpen}
+      />
     </div>
   );
 }

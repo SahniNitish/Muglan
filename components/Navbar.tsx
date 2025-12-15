@@ -3,9 +3,10 @@ import { Menu as MenuIcon, X, ShoppingBag } from 'lucide-react';
 
 interface NavbarProps {
   cartCount: number;
+  onCartClick: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ cartCount }) => {
+export const Navbar: React.FC<NavbarProps> = ({ cartCount, onCartClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -61,7 +62,10 @@ export const Navbar: React.FC<NavbarProps> = ({ cartCount }) => {
             <div className="h-6 w-[1px] bg-gray-700 mx-4"></div>
 
             <div className="flex items-center gap-6">
-               <button className="text-white hover:text-muglan-gold transition-colors relative group">
+               <button 
+                 onClick={onCartClick}
+                 className="text-white hover:text-muglan-gold transition-colors relative group"
+               >
                   <ShoppingBag className="w-5 h-5" />
                   {cartCount > 0 && (
                     <span className="absolute -top-2 -right-2 bg-muglan-gold text-black text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center animate-bounce">
@@ -80,7 +84,10 @@ export const Navbar: React.FC<NavbarProps> = ({ cartCount }) => {
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center gap-4">
-             <button className="text-white relative">
+             <button 
+               onClick={onCartClick}
+               className="text-white relative"
+             >
                   <ShoppingBag className="w-5 h-5" />
                   {cartCount > 0 && (
                     <span className="absolute -top-2 -right-2 bg-muglan-gold text-black text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">

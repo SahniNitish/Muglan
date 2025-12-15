@@ -1,0 +1,248 @@
+{
+  "restaurant": "Muglan Restaurant - The Taste of Himalayas",
+  "website": "https://muglanrestaurant.com/menu-one/",
+  "extracted_date": "2025-12-15",
+  "total_categories": 10,
+  "total_items": 30,
+  "price_range": {
+    "min": 2.99,
+    "max": 20.99,
+    "currency": "USD"
+  },
+  "categories": [
+    {
+      "name": "Accompaniments",
+      "item_count": 3,
+      "price_range": "$4.99 - $5.50",
+      "items": [
+        {
+          "name": "Onion Salad",
+          "price": 5.50,
+          "image": "onionsalad-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Green Salad",
+          "price": 5.50,
+          "image": "green_salad-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Muglan Mixed Pickle Achar",
+          "price": 4.99,
+          "image": "output-onlinepngtools-2-300x225.png"
+        }
+      ]
+    },
+    {
+      "name": "Breakfast-Veg",
+      "item_count": 2,
+      "price_range": "$11.99 - $12.99",
+      "items": [
+        {
+          "name": "Omelette",
+          "price": 11.99,
+          "image": "omelette-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Poori Halwa",
+          "price": 12.99,
+          "image": "purihalwa-removebg-preview-300x225.png"
+        }
+      ]
+    },
+    {
+      "name": "Appetizers-Veg",
+      "item_count": 3,
+      "price_range": "$8.99 - $12.99",
+      "items": [
+        {
+          "name": "Mix Pakora",
+          "price": 9.99,
+          "image": "mixpakora-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Paneer Pakora",
+          "price": 12.99,
+          "image": "paneerpakora-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Chana Chat",
+          "price": 8.99,
+          "image": "chanachat-removebg-preview-300x225.png"
+        }
+      ]
+    },
+    {
+      "name": "Appetizers-Non Veg",
+      "item_count": 2,
+      "price_range": "$12.99 - $14.99",
+      "items": [
+        {
+          "name": "Fish Pakora",
+          "price": 14.99,
+          "image": "fishpakora-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Chicken Pakora",
+          "price": 12.99,
+          "image": "chickenpakora-removebg-preview-300x225.png"
+        }
+      ]
+    },
+    {
+      "name": "Main Course-Veg",
+      "item_count": 3,
+      "price_range": "$12.99 - $15.99",
+      "items": [
+        {
+          "name": "Dal Tadka",
+          "price": 12.99,
+          "image": "daltadka-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Palak Paneer",
+          "price": 15.99,
+          "image": "palakpaneer-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Chana Masala",
+          "price": 13.99,
+          "image": "chanamasala-removebg-preview-300x225.png"
+        }
+      ]
+    },
+    {
+      "name": "Main Course-Non Veg",
+      "item_count": 3,
+      "price_range": "$16.99 - $19.99",
+      "items": [
+        {
+          "name": "Chicken Curry",
+          "price": 16.99,
+          "image": "chickencurry-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Goat Curry",
+          "price": 19.99,
+          "image": "goatcurry-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Fish Curry",
+          "price": 17.99,
+          "image": "fishcurry-removebg-preview-300x225.png"
+        }
+      ]
+    },
+    {
+      "name": "Rice & Biryani",
+      "item_count": 3,
+      "price_range": "$14.99 - $20.99",
+      "items": [
+        {
+          "name": "Vegetable Biryani",
+          "price": 14.99,
+          "image": "vegbiryani-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Chicken Biryani",
+          "price": 17.99,
+          "image": "chickenbiryani-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Goat Biryani",
+          "price": 20.99,
+          "image": "goatbiryani-removebg-preview-300x225.png"
+        }
+      ]
+    },
+    {
+      "name": "Bread",
+      "item_count": 3,
+      "price_range": "$2.99 - $4.99",
+      "items": [
+        {
+          "name": "Naan",
+          "price": 3.99,
+          "image": "naan-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Garlic Naan",
+          "price": 4.99,
+          "image": "garlicnaan-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Roti",
+          "price": 2.99,
+          "image": "roti-removebg-preview-300x225.png"
+        }
+      ]
+    },
+    {
+      "name": "Desserts",
+      "item_count": 2,
+      "price_range": "$6.99 - $7.99",
+      "items": [
+        {
+          "name": "Gulab Jamun",
+          "price": 7.99,
+          "image": "gulabjamun-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Kheer",
+          "price": 6.99,
+          "image": "kheer-removebg-preview-300x225.png"
+        }
+      ]
+    },
+    {
+      "name": "Beverages",
+      "item_count": 3,
+      "price_range": "$3.99 - $5.99",
+      "items": [
+        {
+          "name": "Masala Chai",
+          "price": 3.99,
+          "image": "masalachai-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Lassi",
+          "price": 4.99,
+          "image": "lassi-removebg-preview-300x225.png"
+        },
+        {
+          "name": "Fresh Juice",
+          "price": 5.99,
+          "image": "freshjuice-removebg-preview-300x225.png"
+        }
+      ]
+    }
+  ],
+  "image_urls": [
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/onionsalad-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/green_salad-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/output-onlinepngtools-2-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/omelette-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/purihalwa-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/mixpakora-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/paneerpakora-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/chanachat-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/fishpakora-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/chickenpakora-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/daltadka-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/palakpaneer-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/chanamasala-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/chickencurry-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/goatcurry-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/fishcurry-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/vegbiryani-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/chickenbiryani-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/goatbiryani-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/naan-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/garlicnaan-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/roti-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/gulabjamun-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/kheer-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/masalachai-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/lassi-removebg-preview-300x225.png",
+    "https://muglanrestaurant.com/wp-content/uploads/2025/01/freshjuice-removebg-preview-300x225.png"
+  ]
+}
